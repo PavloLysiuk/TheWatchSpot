@@ -6,11 +6,11 @@
 */
 
 /* utils */
+@import url('./utils/reset.css');
 @import url('./utils/fonts.css');
 @import url('./utils/vars.css');
-@import url('./utils/reset.css');
 @import url('./utils/js-selectors.css');
-@import url('./utils/visually-hidden.css');
+@import url('./utils/classes.css');
 @import url('./utils/container.css');
 
 /* components */
