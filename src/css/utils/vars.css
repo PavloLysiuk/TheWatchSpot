@@ -1,2 +1,10 @@
 :root {
+  --main-dark-color: #141414;
+  --dark-green-color: #1e2827;
+  --grey-color: rgba(20, 20, 20, 0.5);
+  --second-grey-color: rgba(20, 20, 20, 0.4);
+  --white-color: #ffffff;
+  --light-grey-color: #c6cdd1;
+  --second-light-grey-color: rgba(255, 255, 255, 0.5);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
