@@ -1,0 +1,36 @@
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: var(--main-dark-color);
+  background-color: var(--white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background: var(--dark-green-color);
+  border-radius: 8px;
+
+  transition: border-color var(--transition);
+}
+
+.btn:is(:hover, :focus) {
+  border-color: 1px solid var(--white-color);
+}
