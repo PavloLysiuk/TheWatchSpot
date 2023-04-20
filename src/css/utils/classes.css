@@ -4,7 +4,7 @@ body {
   font-weight: 400;
 
   color: var(--main-dark-color);
-  background-color: var(--white-color);
+  background-color: var(--main-background-color);
 }
 
 .visually-hidden {
