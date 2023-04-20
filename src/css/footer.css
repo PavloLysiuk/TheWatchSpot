@@ -110,7 +110,6 @@
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 80px;
-    padding-bottom: 20px;
   }
 
   .footer-logo-link {
@@ -124,10 +123,6 @@
   }
 
   .footer-contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
     font-size: 18px;
     line-height: 1.33;
   }
