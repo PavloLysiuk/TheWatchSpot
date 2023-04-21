@@ -1,0 +1,111 @@
+.catalog {
+    padding: 40px 20px;
+    max-width: 100%;
+}
+
+.catalog-container {
+    padding: 0;
+}
+
+.catalog-title {
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+
+        color: var(--dark-green-color);
+}
+
+.catalog-list {
+    margin-top: 40px;    
+}
+
+.catalog-item {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.catalog-item:nth-last-child(-n+4) {
+    display: none;
+}
+
+.catalog-img {
+    padding: 43px 30px;
+  
+}
+
+.watches-content {
+    padding: 14px 0 0 0;
+    margin-left: 0;
+}
+
+.watches-title {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+    
+        color: var(--main-dark-color);
+}
+
+.watches-destription {
+    margin-top: 4px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+    
+        color: var(--grey-color);
+}
+
+.catalog-button {
+    position: relative;
+    left: 227px;
+    padding: 14px 28px;
+    height: 42px;
+
+}
+
+@media screen and (max-width: 767px){
+    .catalog-icon-open {
+            display: none;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .catalog {
+        padding: 64px 32px;
+    }
+
+    .catalog-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.1;
+        }
+
+    .catalog-list {
+        width: 704px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 40px;
+    }
+
+    .catalog-item {
+        width: 336px;
+    }
+
+    .catalog-button {
+        left: 582px;
+        padding: 18px 35px;
+        height: 50px;
+    }
+
+    .catalog-icon-open {
+        position: relative;
+        top: 14px;
+        right: 14px;
+        left: 298px;
+
+        fill: var(--heart-grey-color);   
+    }
+
+}
