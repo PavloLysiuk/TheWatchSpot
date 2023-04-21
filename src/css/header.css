@@ -16,12 +16,20 @@
 
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+
 
 .header-logo-icon {
   width: 14px;
   height: 14px;
   fill: var(--white-color);
 }
+
+
 
 .header-logo-text {
   margin-left: 4px;
@@ -46,6 +54,7 @@
 .icon-menu-burger {
   width: 24px;
   height: 24px;
+  
   fill: var(--white-color);
 }
 
@@ -70,9 +79,14 @@
 
 
   .header-logo {
-    display: block;
     padding-top: 34px;
     padding-bottom: 34px;
+  }
+
+  .header-logo-icon {
+    width: 19px;
+    height: 19px;
+  
   }
 
   .header-logo-text {
