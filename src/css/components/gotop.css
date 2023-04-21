@@ -3,6 +3,13 @@
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.gotop-wrapper.show {
+  opacity: 1;
 }
 
 .gotop-link {
