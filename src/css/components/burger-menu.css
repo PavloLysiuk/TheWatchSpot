@@ -38,7 +38,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+}
+
+
+.mob-link {
+display: block;
+padding: 7px 0;
+
 }
 
 .mob-menu-item {

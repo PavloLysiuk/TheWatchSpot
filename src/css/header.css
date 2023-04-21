@@ -16,6 +16,7 @@
 
 }
 
+
 .header-logo-icon {
   width: 14px;
   height: 14px;
@@ -67,9 +68,11 @@
     max-width: 768px;
   }
 
-  .header-wrapper {
-    padding-top: 20px;
-    padding-bottom: 40px;
+
+  .header-logo {
+    display: block;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 
   .header-logo-text {
@@ -81,15 +84,7 @@
   }
 
 
-  .header-item:hover,
-  .header-item:focus {
-    border-bottom: 1px solid var(--white-color);
-    
-  }
-
   .header-contacts {
-    min-width: 159px;
-    min-height: 48px;
 
     display: flex;
     align-items: center;
@@ -110,6 +105,8 @@
 
   .header-list {
     display: flex;
+    padding-top: 38px;
+    padding-bottom: 38px;
     align-items: center;
     gap: 40px;
   }
@@ -122,17 +119,29 @@
     text-transform: uppercase;
 
     color: var(--white-color);
+
+    transition: color var(--transition);
+  }
+
+
+  .header-item:hover,
+  .header-item:focus {
+    color: var(--second-light-grey-color);
+    
   }
 
   .header-tel {
+    padding: 18px 35px;
     font-size: 9px;
     line-height: 1.33;
     text-align: center;
     text-transform: uppercase;
 
     color: var(--white-color);
+    
   }
 }
+
 
 /* Desktop */
 
@@ -142,9 +151,5 @@
       max-width: 1200px;
     }
 
-    .header-wrapper {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
 
   }
