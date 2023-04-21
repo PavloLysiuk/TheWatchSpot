@@ -1,0 +1,76 @@
+.catalog-list{
+  display: flex;
+  gap: 25px;
+}
+
+
+.catalog-item{
+    width: 276px;
+    height: 375px;
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.catalog-name{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.catalog-descr{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 325px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.catalog-item:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-front {
+    background-color:transparent;
+    color: black;
+  }
+
+  .flip-back {
+    padding-left: 20px;
+    background: #1E2827;
+    border-radius: 8px;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .overlay-title{
+    margin-top: 26px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+.overlay-decr{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.5);
+}
