@@ -4,10 +4,10 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   //   direction: 'vertical',
 
-  // effect flip
-  effect: 'flip',
+  // effect flip for foto
+  // effect: 'flip',
 
-  // effect cube
+  // effect cube for foto
   effect: 'cube',
   grabCursor: true,
   cubeEffect: {
@@ -17,9 +17,14 @@ const swiper = new Swiper('.swiper', {
     shadowScale: 0.94,
   },
 
+  // autoplay for foto
+  // autoplay: {
+  //   delay: 3500,
+  //   disableOnInteraction: false,
+  // },
+
   loop: true,
   slidesPerView: 1,
-  //   spaceBetween: 500,
 
   // If we need pagination
   pagination: {

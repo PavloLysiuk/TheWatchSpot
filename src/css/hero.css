@@ -54,22 +54,22 @@
 
 .hero-slider-wrapper-navigation {
   position: absolute;
-  top: 220px;
+  top: 218px;
   left: 0;
 
   width: 266px;
-  height: 32px;
+  height: 33px;
   margin-bottom: 40px;
 }
 
 .swiper-button-prev {
   top: 0;
-  left: 0;
+  left: -1px;
   z-index: 11;
 
   margin-top: 0;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
 
   border: 1px solid var(--second-light-grey-color);
   border-radius: 8px;
@@ -77,12 +77,12 @@
 
 .swiper-button-next {
   top: 0;
-  left: 44px;
+  left: 43px;
   z-index: 11;
 
   margin-top: 0;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
 
   border: 1px solid var(--white-color);
   border-radius: 8px;
@@ -100,6 +100,31 @@
 .swiper-button-prev:after {
   display: none;
 }
+
+.swiper-pagination {
+  position: absolute;
+  top: 15px;
+  left: 192px;
+
+  width: 74px;
+  height: 18px;
+
+  text-align: left;
+}
+
+.swiper-pagination-fraction {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--white-color);
+}
+
+.swiper-pagination-total {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .hero-description {
   display: block;
   width: 248px;
@@ -116,4 +141,10 @@
 .hero-image {
   max-width: 335px;
   max-height: 410px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
