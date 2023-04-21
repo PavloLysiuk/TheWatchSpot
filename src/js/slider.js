@@ -1,12 +1,6 @@
 import Swiper from 'swiper/bundle';
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  //   direction: 'vertical',
-
-  // effect flip for foto
-  // effect: 'flip',
-
   // effect cube for foto
   effect: 'cube',
   grabCursor: true,
@@ -18,13 +12,12 @@ const swiper = new Swiper('.swiper', {
   },
 
   // autoplay for foto
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3500,
+  //   disableOnInteraction: false,
+  // },
 
   loop: true,
-  // slidesPerView: 1,
 
   // If we need pagination
   pagination: {
@@ -37,9 +30,4 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  //   scrollbar: {
-  //     el: '.swiper-scrollbar',
-  //   },
 });
