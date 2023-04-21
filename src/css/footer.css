@@ -16,6 +16,13 @@
   display: block;
   height: 40px;
   width: 40px;
+
+  transform: scale(1);
+  transition: var(--transition);
+}
+
+.footer-logo-link:is(:hover, :focus) {
+  transform: scale(1.15);
 }
 
 .footer-logo-icon {
@@ -41,15 +48,21 @@
   letter-spacing: -0.02em;
 }
 
-.footer-nav-item {
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer-nav-link {
   line-height: 1.29;
   text-transform: uppercase;
 
   color: var(--white-color);
+
+  transition: color var(--transition);
 }
 
-.footer-nav-item:not(:last-child) {
-  margin-bottom: 14px;
+.footer-nav-link:is(:hover, :focus) {
+  color: var(--second-light-grey-color);
 }
 
 .footer-socials-list {
@@ -66,12 +79,17 @@
 
   background-color: transparent;
   border: 1px solid var(--social-hover-color);
-  border-radius: 10px;
+  border-radius: 25%;
 
-  transition: background-color var(--transition);
+  transform: scale(1);
+
+  transition: transform var(--transition), border-radius var(--transition),
+    background-color var(--transition);
 }
 
 .footer-socials-link:is(:hover, :focus) {
+  transform: scale(1.25);
+  border-radius: 50%;
   background-color: var(--social-hover-color);
 }
 
