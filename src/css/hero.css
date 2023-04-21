@@ -216,7 +216,6 @@
   }
 
   .swiper-pagination {
-    position: absolute;
     top: 23px;
     left: 354px;
 
@@ -241,4 +240,39 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    height: 789px;
+  }
+
+  .hero-container {
+    column-gap: initial;
+    width: 1200px;
+  }
+
+  .hero-title {
+    order: 1;
+    width: 750px;
+    margin-bottom: 43px;
+  }
+
+  .hero-slider-wrapper {
+    order: 3;
+    margin-top: 79px;
+    margin-right: 0;
+  }
+
+  .hero-description {
+    order: 2;
+    margin-top: 0;
+    margin-left: 144px;
+    width: 282px;
+    height: 90px;
+  }
+
+  .hero-image-wrapper {
+    order: 4;
+    margin-left: 64px;
+    width: 676px;
+    height: 394px;
+  }
 }

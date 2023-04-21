@@ -18,13 +18,13 @@ const swiper = new Swiper('.swiper', {
   },
 
   // autoplay for foto
-  // autoplay: {
-  //   delay: 3500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
 
   loop: true,
-  slidesPerView: 1,
+  // slidesPerView: 1,
 
   // If we need pagination
   pagination: {
