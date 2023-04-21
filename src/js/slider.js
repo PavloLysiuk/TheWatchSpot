@@ -4,14 +4,10 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   //   direction: 'vertical',
 
-  // flip effect
-  // effect: 'flip',
-  //
-  loop: true,
-  slidesPerView: 1,
-  //   spaceBetween: 500,
+  // effect flip
+  effect: 'flip',
 
-  // cube effect
+  // effect cube
   effect: 'cube',
   grabCursor: true,
   cubeEffect: {
@@ -20,6 +16,10 @@ const swiper = new Swiper('.swiper', {
     shadowOffset: 20,
     shadowScale: 0.94,
   },
+
+  loop: true,
+  slidesPerView: 1,
+  //   spaceBetween: 500,
 
   // If we need pagination
   pagination: {
