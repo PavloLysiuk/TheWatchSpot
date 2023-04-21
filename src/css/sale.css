@@ -18,8 +18,6 @@
 .sale-gallery-item{
   display: flex;
   background-color:var(--main-dark-color);
-  width: 80px;
-  height: 80px;
 }
 
 .sale-gallery-item:not(:last-child){
@@ -211,4 +209,46 @@ position: relative;
   line-height: 1.29;
   letter-spacing: -0.01em;
   color:var(--grey-color)
+}
+
+@media screen and (min-width: 768px) {
+
+  .sale-container{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .sale-picture-big{
+    max-width: 406px;
+    height: 614px;
+  }
+
+
+
+  .sale-item-title{
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .sale-title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .info-wrap{
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+
+  .sale-picture-big{
+    max-width: 406px;
+    max-height: 614px;
+  }
+
+  
+
 }
