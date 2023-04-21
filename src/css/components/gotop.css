@@ -1,0 +1,36 @@
+.gotop-wrapper {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gotop-link {
+  display: block;
+
+  width: 55px;
+  height: 55px;
+  scale: 1;
+
+  background-color: var(--dark-green-color);
+  border: 1px solid var(--social-hover-color);
+  border-radius: 25%;
+
+  transition: transform var(--transition), border-radius var(--transition);
+}
+
+.gotop-link:is(:hover, :focus) {
+  transform: scale(1.27);
+  border-radius: 50%;
+}
+
+.gotop-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+
+  fill: var(--white-color);
+}
