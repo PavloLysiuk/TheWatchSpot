@@ -1,17 +1,28 @@
 <div class="buy-now-backdrop">
   <div class="buy-now-modal">
     <button class="btn buy-now-close-modal" type="button">
-      <!-- <svg width="8" height="8" class="close-cross">
-            <use href="./images/icons.svg#icon-cross"></use>
-          </svg> -->
+      <svg width="20" height="20" class="close-cross">
+        <use href="/img/icons.svg#close"></use>
+      </svg>
     </button>
     <div class="buy-now-wrap">
       <div class="wach-info">
-        <img src="../img/catalog-desktop-1.png" alt="" />
-        <p>Tube Watch S42 Date Steel With Black</p>
-        <p>€395</p>
+        <img
+          class="buy-now-img"
+          srcset="
+            /img/catalog-desktop-1.png     1x,
+            /img/catalog-desktop-1-@2x.png 2x
+          "
+          src="/img/catalog-desktop-1.png"
+          alt="LEFF AMSTERDAM"
+        />
+        <p class="buy-now-description">
+          Tube Watch S42 Date Steel With Black...
+          <!-- Case ?????-->
+        </p>
+        <p class="buy-now-price">€395</p>
       </div>
-      <form class="modal-form" name="buy-now-form" autocomplete="on">
+      <form class="buy-now-modal-form" name="buy-now-form" autocomplete="on">
         <label class="buy-now-label">
           Full name
           <input
@@ -51,18 +62,15 @@
             class="buy-now-input"
             name="comment"
             placeholder="Enter your text"
-            cols="30"
             rows="10"
           ></textarea>
         </label>
-
+        <button class="btn buy-now-submit" type="submit">Submit</button>
         <p>
           By clicking on “Send message” button, you agree to our
           <a class="privacy-policy" href="">Privacy Policy</a>, and allow
           Promodo to use this information for marketing purposes.
         </p>
-
-        <button class="btn" type="submit">Submit</button>
       </form>
     </div>
   </div>
