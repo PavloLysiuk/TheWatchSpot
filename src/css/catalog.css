@@ -8,6 +8,7 @@
 }
 
 .catalog-title {
+    margin-bottom: 40px;
         font-size: 32px;
         line-height: 1.25;
         letter-spacing: -0.02em;
@@ -15,12 +16,7 @@
         color: var(--dark-green-color);
 }
 
-.catalog-list {
-    margin-top: 40px;    
-}
-
 .catalog-item {
-    margin-bottom: 40px;
     width: 100%;
     height: 100%;
 }
@@ -57,8 +53,9 @@
 }
 
 .catalog-button {
-    position: relative;
-    left: 227px;
+  position: relative;
+  margin-top: 40px;
+    left: 218px;
     padding: 14px 28px;
     height: 42px;
 
@@ -82,7 +79,7 @@
         }
 
     .catalog-list {
-        width: 704px;
+       
         display: flex;
         flex-wrap: wrap;
         column-gap: 32px;
@@ -94,7 +91,7 @@
     }
 
     .catalog-button {
-        left: 582px;
+        left: 572px;
         padding: 18px 35px;
         height: 50px;
     }
@@ -102,7 +99,6 @@
     .catalog-icon-open {
         position: relative;
         top: 14px;
-        right: 14px;
         left: 298px;
 
         fill: var(--heart-grey-color);   
