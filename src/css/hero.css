@@ -74,6 +74,13 @@
 
   border: 1px solid var(--second-light-grey-color);
   border-radius: 8px;
+
+  transition: border-color var(--transition);
+}
+
+.hero-slider-button-prev:hover,
+.hero-slider-button-prev:focus {
+  border-color: var(--white-color);
 }
 
 .hero-slider-button-next {
@@ -85,21 +92,42 @@
   width: 34px;
   height: 34px;
 
-  border: 1px solid var(--white-color);
+  border: 1px solid var(--second-light-grey-color);
   border-radius: 8px;
-}
 
-.slider-button-next-icon {
-  fill: var(--white-color);
-}
-
-.slider-button-prev-icon {
-  fill: var(--second-light-grey-color);
+  transition: border-color var(--transition);
 }
 
 .hero-slider-button-next:after,
 .hero-slider-button-prev:after {
   display: none;
+}
+
+.hero-slider-button-next:hover,
+.hero-slider-button-next:focus {
+  border-color: var(--white-color);
+}
+
+.slider-button-next-icon {
+  fill: var(--second-light-grey-color);
+
+  transition: fill var(--transition);
+}
+
+.hero-slider-button-next:hover .slider-button-next-icon,
+.hero-slider-button-next:focus .slider-button-next-icon {
+  fill: var(--white-color);
+}
+
+.slider-button-prev-icon {
+  fill: var(--second-light-grey-color);
+
+  transition: fill var(--transition);
+}
+
+.hero-slider-button-prev:hover .slider-button-prev-icon,
+.hero-slider-button-prev:focus .slider-button-prev-icon {
+  fill: var(--white-color);
 }
 
 .swiper-pagination {
