@@ -26,6 +26,8 @@
 
 .sale-picture:nth-child(1){
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .sale-container {
@@ -48,14 +50,15 @@
 .sale-gallery-item {}
 
 .sale-picture-big{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   max-width: 235px;
-  height: 350px;
+  max-height: 350px;
 }
 
 .sale-item-big{
+  display: flex;
+  justify-content: center;
+  align-items:center;
   background-color:var(--main-dark-color);
 }
 
@@ -264,7 +267,7 @@ position: relative;
   }
 
   .sale-picture{
-    margin: 0 auto;
+
     width: 146px;
     height: 146px;
   }
