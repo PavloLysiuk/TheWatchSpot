@@ -16,8 +16,9 @@ ul {
 }
 
 a {
-  color: currentColor;
+  font-style: normal;
   text-decoration: none;
+  color: currentColor;
 }
 
 button {
