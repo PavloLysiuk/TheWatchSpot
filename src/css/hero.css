@@ -3,7 +3,7 @@
 .hero {
   height: 1192px;
 
-  background-color: var(--main-dark-color);
+  background-color: red;
 }
 
 .hero-container {
