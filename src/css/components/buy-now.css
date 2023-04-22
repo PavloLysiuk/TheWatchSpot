@@ -6,17 +6,23 @@
   width: 100%;
   height: 100%;
 
+  backdrop-filter: blur(12px);
   background-color: var(--second-grey-color);
+
+  transition: opacity var(--transition), visibility var(--transition);
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .buy-now-modal {
   position: relative;
   width: 335px;
-  max-width: 90%;
+  max-width: 99%;
   margin: 20px auto;
-  /* min-height: 586px; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 
   background-color: var(--white-color);
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
@@ -25,9 +31,17 @@
     0px 0px 36.2375px rgba(0, 0, 0, 0.025),
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
+
+  transition: transform var(--transition);
+}
+
+.buy-now-backdrop.is-hidden > .buy-now-modal {
+  transform: translate(-50%, -150%);
 }
 
 .buy-now-close-modal {
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 12px;
   right: 12px;
@@ -39,13 +53,12 @@
   border: transparent;
 }
 
-.close-cross {
+.buy-now-close-cross {
   fill: var(--main-dark-color);
 }
 
-.wach-info {
+.buy-now-wach-info {
   margin: 0 10px 40px;
-  /* margin-bottom: 40px; */
 }
 
 .buy-now-description {
@@ -98,10 +111,28 @@
   border-radius: 8px;
 }
 
+.buy-now-input:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+.buy-now-input::placeholder {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--grey-color);
+}
+
 .buy-now-submit {
   width: 100%;
   height: 50px;
   margin-bottom: 12px;
+  font-size: 12px;
+  border: transparent;
+}
+
+.buy-now-submit:hover,
+.buy-now-submit:focus {
+  border: 1px solid #ffffff;
 }
 
 .buy-now-modal-form textarea {
@@ -109,6 +140,87 @@
   resize: none;
 }
 
-.privacy-policy {
+.buy-now-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--second-grey-color);
+}
+
+.buy-now-privacy-policy {
   text-decoration-line: underline;
+  text-decoration-thickness: 0.01rem;
+}
+
+.buy-now-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-now-modal {
+    width: 744px;
+  }
+
+  .buy-now-close-modal {
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .buy-now-wrap {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  .buy-now-wach-info {
+    width: 276px;
+    margin: 0;
+  }
+
+  .buy-now-modal-form {
+    width: 368px;
+  }
+
+  .buy-now-label {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .buy-now-submit {
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .buy-now-modal {
+    width: 904px;
+
+    position: absolute;
+
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buy-now-wrap {
+    gap: 40px;
+  }
+
+  .buy-now-modal-form {
+    width: 508px;
+  }
+
+  .buy-now-label {
+    margin-bottom: 24px;
+  }
+
+  .buy-now-modal-form label:nth-child(4) {
+    margin-bottom: 40px;
+  }
+
+  .buy-now-br {
+    display: inline;
+  }
 }
