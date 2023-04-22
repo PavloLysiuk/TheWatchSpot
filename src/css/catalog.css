@@ -1,10 +1,7 @@
 .catalog {
-    padding: 40px 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     max-width: 100%;
-}
-
-.catalog-container {
-    padding: 0;
 }
 
 .catalog-title {
@@ -49,12 +46,11 @@
 }
 
 .catalog-button {
-  position: relative;
+  position: absolute;
   margin-top: 40px;
-    left: 218px;
+  right: 20px;
     padding: 14px 28px;
     height: 42px;
-
 }
 
 @media screen and (max-width: 767px){
@@ -69,7 +65,8 @@
 
 @media screen and (min-width: 768px) {
     .catalog {
-        padding: 64px 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .catalog-title {
@@ -91,9 +88,9 @@
     }
 
     .catalog-button {
-        left: 572px;
         padding: 18px 35px;
         height: 50px;
+        right: 32px;
     }
 
     .catalog-icon-open {
@@ -105,15 +102,17 @@
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1199px) {
     .catalog-item:nth-last-child(-n+4) {
             display: none;
         }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
     .catalog {
-            padding: 80px 132px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background-color: var(--white-color);
         }
 
     .catalog-list {
@@ -130,9 +129,10 @@
         .catalog-icon-open {
             display: none;
         } 
+           .catalog-button {
+               right: 12px;
+                padding: 18px 35px;
+                height: 50px;
+           }
         
-        .catalog-button {
-            left: 1044px;
-           
-        }
 }
