@@ -68,6 +68,7 @@
 }
 
 .buy-now-price {
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
 
@@ -75,6 +76,7 @@
 }
 
 .buy-now-img {
+  padding-top: 26px;
   margin-bottom: 39px;
 }
 .buy-now-wrap {
@@ -109,6 +111,15 @@
 
   border: 1px solid var(--grey-color);
   border-radius: 8px;
+}
+
+.buy-now-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--grey-color);
 }
 
 .buy-now-input:not(:focus):not(:placeholder-shown):invalid {
@@ -188,7 +199,13 @@
     line-height: 1.29;
   }
 
-  .buy-now-submit {
+  .buy-now-input::placeholder {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .buy-now-modal-form textarea {
+    height: 166px;
   }
 }
 
