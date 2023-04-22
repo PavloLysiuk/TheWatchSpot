@@ -21,10 +21,6 @@
     height: 100%;
 }
 
-.catalog-item:nth-last-child(-n+4) {
-    display: none;
-}
-
 .catalog-img {
     padding: 43px 30px;
   
@@ -44,7 +40,7 @@
         color: var(--main-dark-color);
 }
 
-.watches-destription {
+.watches-description {
     margin-top: 4px;
         line-height: 1.29;
         letter-spacing: -0.02em;
@@ -62,6 +58,10 @@
 }
 
 @media screen and (max-width: 767px){
+    .catalog-item:nth-last-child(-n+4) {
+            display: none;
+        }
+
     .catalog-icon-open {
             display: none;
         }
@@ -103,5 +103,36 @@
 
         fill: var(--heart-grey-color);   
     }
+}
 
+@media screen and (max-width: 1279px) {
+    .catalog-item:nth-last-child(-n+4) {
+            display: none;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .catalog {
+            padding: 80px 132px;
+        }
+
+    .catalog-list {
+             display: flex;
+             flex-wrap: wrap;
+             column-gap: 24px;
+             row-gap: 64px;
+         }
+
+        .catalog-item {
+            width: 276px;
+        }
+    
+        .catalog-icon-open {
+            display: none;
+        } 
+        
+        .catalog-button {
+            left: 1044px;
+           
+        }
 }
