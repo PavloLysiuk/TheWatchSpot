@@ -1,7 +1,7 @@
 const gotopWrapper = document.querySelector('.gotop-wrapper');
 
 window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 880) {
     gotopWrapper.classList.add('show');
   } else {
     gotopWrapper.classList.remove('show');
