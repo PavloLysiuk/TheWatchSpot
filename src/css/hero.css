@@ -122,6 +122,7 @@
 
 .swiper-pagination-current::before {
   content: '0';
+  margin-right: 1px;
 }
 
 .swiper-pagination-current::after {
@@ -143,17 +144,18 @@
 
 .swiper-pagination-total::before {
   content: '0';
+  margin-right: 1px;
 }
 
 .swiper-pagination-total::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: -39px;
+  top: 8px;
+  left: -38px;
   z-index: 101;
 
   width: 32px;
-  height: 2px;
+  height: 1px;
 
   background-color: var(--white-color);
 }
@@ -249,7 +251,7 @@
   }
 
   .swiper-pagination-total::after {
-    left: -47px;
+    left: -46px;
 
     width: 40px;
   }
@@ -268,14 +270,14 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero {
     height: 789px;
   }
 
   .hero-container {
     column-gap: initial;
-    width: 1200px;
+    width: 1280px;
   }
 
   .hero-title {
