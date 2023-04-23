@@ -54,16 +54,12 @@
 .icon-menu-burger {
   width: 24px;
   height: 24px;
-  
+
   fill: var(--white-color);
 }
 
 
 @media screen and (min-width: 375px) {
-    .container {
-      margin: 0 auto;
-      max-width: 375px;
-    }
   }
 
 
@@ -72,10 +68,6 @@
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-    max-width: 768px;
-  }
 
 
   .header-logo {
@@ -86,7 +78,7 @@
   .header-logo-icon {
     width: 19px;
     height: 19px;
-  
+
   }
 
   .header-logo-text {
@@ -144,7 +136,7 @@
   .header-item:hover,
   .header-item:focus {
     color: var(--second-light-grey-color);
-    
+
   }
 
   .header-tel {
@@ -155,7 +147,7 @@
     text-transform: uppercase;
 
     color: var(--white-color);
-    
+
   }
 }
 
@@ -163,10 +155,6 @@
 /* Desktop */
 
 @media screen and (min-width: 1200px) {
-    .container {
-      padding: 0 12px;
-      max-width: 1200px;
-    }
 
 
   }
