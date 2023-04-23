@@ -279,16 +279,31 @@
 
     border-radius: 8px;
     border: 1px solid var(--social-hover-color);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.04);
+
+    transition: background-color var(--transition);
+  }
+
+  .modal-team-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
   }
 
   .modal-team-photo {
     width: 50px;
     height: 50px;
 
+    transform: scale(1);
+
     overflow: hidden;
     border-radius: 50%;
     background-color: #fff;
+
+    transition: transform var(--transition), border-radius var(--transition);
+  }
+
+  .modal-team-item:hover .modal-team-photo {
+    transform: scale(1.2);
+    border-radius: 10%;
   }
 
   .modal-team-title {
