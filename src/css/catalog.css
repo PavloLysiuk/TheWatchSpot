@@ -14,24 +14,24 @@
 }
 
 .catalog-item {
+    margin-bottom: 40px;
     width: 100%;
-    height: 100%;
+    height: 410px;
 }
 
 .catalog-img {
-    padding: 43px 30px;
-  
+    padding: 43px 30px; 
 }
 
 .watches-content {
-    padding: 14px 0 0 0;
+    margin-top: 14px;
     margin-left: 0;
 }
 
 .watches-title {
     font-weight: 400;
         font-size: 14px;
-        line-height: 1.29;
+        line-height: 1.28;
         letter-spacing: -0.02em;
     
         color: var(--main-dark-color);
@@ -39,18 +39,23 @@
 
 .watches-description {
     margin-top: 4px;
-        line-height: 1.29;
+    margin-bottom: 0;
+    font-size: 12px;
+        line-height: 1.2;
         letter-spacing: -0.02em;
     
         color: var(--grey-color);
 }
 
 .catalog-button {
-  position: absolute;
+  display: block;
   margin-top: 40px;
-  right: 20px;
-    padding: 14px 28px;
-    height: 42px;
+  margin-left: auto;
+  padding: 14px 28px;
+  height: 42px;
+  font-size: 12px;
+  border: none;
+
 }
 
 @media screen and (max-width: 767px){
@@ -76,7 +81,6 @@
         }
 
     .catalog-list {
-       
         display: flex;
         flex-wrap: wrap;
         column-gap: 32px;
@@ -87,28 +91,38 @@
         width: 336px;
     }
 
+    .catalog-img {
+    padding: 43px 30px;
+}
+
+.catalog-wrapper {
+    position: relative;
+}
+ .catalog-icon-open {
+     position: absolute;
+     top: 14px;
+     right: 14px;
+     width: 24px;
+     height: 24px;
+
+     fill: var(--heart-grey-color);
+ }
+
     .catalog-button {
         padding: 18px 35px;
         height: 50px;
         right: 32px;
     }
 
-    .catalog-icon-open {
-        position: relative;
-        top: 14px;
-        left: 298px;
-
-        fill: var(--heart-grey-color);   
-    }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
     .catalog-item:nth-last-child(-n+4) {
             display: none;
         }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .catalog {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -124,11 +138,17 @@
 
         .catalog-item {
             width: 276px;
+            height: 375px;
+        }
+
+        .catalog-img {
+            padding: 26px 0 25px 0;
         }
     
         .catalog-icon-open {
             display: none;
         } 
+
            .catalog-button {
                right: 12px;
                 padding: 18px 35px;
