@@ -57,20 +57,21 @@
 
 }
 
-.catalog-link {
-    background-color: transparent;
-        perspective: 1000px;
+.catalog-link:hover .flip-inner, 
+.catalog-link:focus .flip-inner {
+    transform: rotateY(180deg);
 }
 
 .flip-inner {
-    width: 336px;
+    max-width: 336px;
     height: 360px;
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
 
-.flip-item:hover .flip-inner {
+.flip-item:hover .flip-inner,
+.flip-item:focus .flip-inner {
     transform: rotateY(180deg);
 }
 
