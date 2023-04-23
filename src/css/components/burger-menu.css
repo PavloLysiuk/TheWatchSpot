@@ -1,7 +1,7 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  padding: 29px 20px;
+  z-index: 999;
 
   width: 100%;
   height: 100%;
@@ -18,11 +18,6 @@
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
-}
-
-.header-logo-menu {
-  display: flex;
-  align-items: center;
 }
 
 .menu-mob-close {
@@ -54,14 +49,18 @@
   padding: 7px 0;
 
   display: block;
-}
 
-.mob-menu-item {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
-  color: var(--white-color);
+color: var(--white-color);
+  transition: color var(--transition);
+}
+
+.mob-link:hover,
+.mob-link:focus {
+  color: var(--second-light-grey-color);
 }
 
 /* Tablet */
