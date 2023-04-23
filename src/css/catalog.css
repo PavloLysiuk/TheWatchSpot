@@ -52,7 +52,6 @@
   margin-top: 40px;
   margin-left: auto;
   padding: 14px 28px;
-  height: 42px;
   font-size: 12px;
   border: none;
 
@@ -125,6 +124,7 @@
 
 @media screen and (min-width: 768px) {
     .catalog {
+        justify-content: center;
         padding-top: 64px;
         padding-bottom: 64px;
     }
@@ -151,9 +151,6 @@
     padding: 43px 30px;
 }
 
-.catalog-wrapper {
-    position: relative;
-}
  .catalog-icon-open {
      position: absolute;
      top: 14px;
@@ -166,8 +163,6 @@
 
     .catalog-button {
         padding: 18px 35px;
-        height: 50px;
-        right: 32px;
     }
 
         .overlay-title {
@@ -215,9 +210,6 @@
 
            .catalog-button {
             margin-top: 80px;
-               right: 12px;
-                padding: 18px 35px;
-                height: 50px;
            }
 
         .flip-inner {
