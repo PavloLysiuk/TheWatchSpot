@@ -12,10 +12,6 @@ const swiper = new Swiper('.swiper', {
   },
 
   // autoplay for foto
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
 
   loop: true,
 
