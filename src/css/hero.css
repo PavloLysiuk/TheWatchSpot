@@ -1,16 +1,12 @@
 @import 'swiper/css/bundle';
 
 .hero {
-  height: 1192px;
-
   background-color: var(--main-dark-color);
 }
 
 .hero-container {
-  position: absolute;
-  top: 122px;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-top: 122px;
+  padding-bottom: 40px;
 }
 
 .hero-title {
@@ -206,24 +202,14 @@
   max-height: 410px;
 }
 
-@media screen and (min-width: 375px) {
-  .hero-container {
-    width: 375px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .hero {
-    height: 1223px;
-  }
-
   .hero-container {
-    top: 148px;
+    padding-top: 148px;
+    padding-bottom: 64px;
 
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
-    width: 768px;
   }
 
   .hero-title {
@@ -299,13 +285,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hero {
-    height: 789px;
-  }
-
   .hero-container {
     column-gap: initial;
-    width: 1280px;
+    padding-bottom: 80px;
   }
 
   .hero-title {
