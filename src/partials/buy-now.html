@@ -1,0 +1,78 @@
+<div class="buy-now-backdrop is-hidden">
+  <div class="buy-now-modal">
+    <button class="btn buy-now-close-modal" type="button">
+      <svg width="24" height="24" class="buy-now-close-cross">
+        <use href="/img/icons.svg#close"></use>
+      </svg>
+    </button>
+    <div class="buy-now-wrap">
+      <div class="buy-now-wach-info">
+        <img
+          class="buy-now-img"
+          srcset="
+            /img/catalog-desktop-1.png     1x,
+            /img/catalog-desktop-1-@2x.png 2x
+          "
+          src="/img/catalog-desktop-1.png"
+          alt="LEFF AMSTERDAM"
+        />
+        <p class="buy-now-description">
+          Tube Watch S42 Date Steel With Black...
+          <!-- Case ?????-->
+        </p>
+        <p class="buy-now-price">€395</p>
+      </div>
+      <form class="buy-now-modal-form" name="buy-now-form" autocomplete="on">
+        <label class="buy-now-label">
+          Full name
+          <input
+            class="buy-now-input"
+            type="text"
+            name="username"
+            pattern="(?=^.{0,40}$)^[a-zA-Z-]+\s[a-zA-Z-]+$"
+            placeholder="Enter your full name"
+          />
+        </label>
+        <label class="buy-now-label">
+          Email
+          <input
+            class="buy-now-input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <label class="buy-now-label">
+          Card number
+          <input
+            class="buy-now-input"
+            type="tel"
+            name="card-number"
+            inputmode="numeric"
+            pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+            autocomplete="cc-number"
+            placeholder="Enter card"
+          />
+        </label>
+        <label class="buy-now-label">
+          Comments
+          <textarea
+            class="buy-now-input"
+            name="comment"
+            placeholder="Enter your text"
+          ></textarea>
+        </label>
+        <button class="btn buy-now-submit" type="submit" disabled>
+          Submit
+        </button>
+        <p class="buy-now-text">
+          By clicking on “Submit” button, you agree to our
+          <a class="buy-now-privacy-policy" href="" target="_blank"
+            >Privacy Policy</a
+          >,<br class="buy-now-br" />
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

@@ -114,5 +114,9 @@
 
     font-size: 9px;
     line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white-color);
   }
 }
