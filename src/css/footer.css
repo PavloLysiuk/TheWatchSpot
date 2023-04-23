@@ -281,11 +281,14 @@
     border: 1px solid var(--social-hover-color);
     background-color: rgba(255, 255, 255, 0.04);
 
-    transition: background-color var(--transition);
+    transition: transform var(--transition), background-color var(--transition),
+      box-shadow var(--transition);
   }
 
   .modal-team-item:hover {
+    transform: translateY(-3px);
     background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.13);
   }
 
   .modal-team-photo {
