@@ -14,8 +14,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/TheWatchSpot/assets/index-48119602.js"></script>
-    <link rel="stylesheet" href="/TheWatchSpot/assets/index-5a550d3f.css">
+    <script type="module" crossorigin src="/TheWatchSpot/assets/index-65d8cf30.js"></script>
+    <link rel="stylesheet" href="/TheWatchSpot/assets/index-6b6694ed.css">
   </head>
 
   <body>
@@ -305,26 +305,26 @@
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-tablet-1-d8255d79.webp 342w, /TheWatchSpot/assets/new-watch-tablet-1-@2x-06a657c9.webp 684w"
-            media="(max-width: 1199px)"
+            media="(max-width: 1279px)"
             sizes="(min-width: 768px) 342px, 100vw"
             type="image/webp"
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-tablet-1-3952e2fd.jpg 342w, /TheWatchSpot/assets/new-watch-tablet-1-@2x-d06a3c33.jpg 684w"
-            media="(max-width: 1199px)"
+            media="(max-width: 1279px)"
             sizes="(min-width: 768px) 342px, 100vw"
             type="image/jpeg"
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-desktop-1-640e81ce.webp 576w, /TheWatchSpot/assets/new-watch-desktop-1-@2x-260a2f35.webp 1152w"
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
             sizes="(min-width: 1200px) 576px, 100vw"
             type="image/webp"
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-desktop-1-6d389e2f.jpg 576w, /TheWatchSpot/assets/new-watch-desktop-1-@2x-d17eea56.jpg 1152w"
-            media="(min-width: 1200px)"
-            sizes="(min-width: 1200px) 576px, 100vw"
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 576px, 100vw"
             type="image/jpeg"
           />
           <img src="/TheWatchSpot/assets/new-watch-desktop-1-6d389e2f.jpg" alt="Bronze watch" />
@@ -346,26 +346,26 @@
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-tablet-2-63a9b663.webp 342w, /TheWatchSpot/assets/new-watch-tablet-2-@2x-735eeb23.webp 684w"
-            media="(max-width: 1199px)"
+            media="(max-width: 1279px)"
             sizes="(min-width: 768px) 342px, 100vw"
             type="image/webp"
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-tablet-2-a97ebbee.jpg 342w, /TheWatchSpot/assets/new-watch-tablet-2-@2x-162f7e70.jpg 684w"
-            media="(max-width: 1199px)"
+            media="(max-width: 1279px)"
             sizes="(min-width: 768px) 342px, 100vw"
             type="image/jpeg"
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-desktop-2-26e3508f.webp 576w, /TheWatchSpot/assets/new-watch-desktop-2-@2x-f2407b29.webp 1152w"
-            media="(min-width: 1200px)"
-            sizes="(min-width: 1200px) 576px, 100vw"
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 576px, 100vw"
             type="image/webp"
           />
           <source
             srcset="/TheWatchSpot/assets/new-watch-desktop-2-45aabfaf.jpg 576w, /TheWatchSpot/assets/new-watch-desktop-2-@2x-247314d6.jpg 1152w"
-            media="(min-width: 1200px)"
-            sizes="(min-width: 1200px) 576px, 100vw"
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 576px, 100vw"
             type="image/jpeg"
           />
           <img src="/TheWatchSpot/assets/new-watch-desktop-2-45aabfaf.jpg" alt="Silver watch" />
@@ -486,9 +486,10 @@ UT 84104</pre
 
     </footer>
 
-    <div class="buy-now-backdrop is-hidden">
+    <div class="buy-now-backdrop" data-modal>
+  <!-- to check the modal window add this class "is-open"   -->
   <div class="buy-now-modal">
-    <button class="btn buy-now-close-modal" type="button">
+    <button class="btn buy-now-close-modal" type="button" data-modal-close>
       <svg width="24" height="24" class="buy-now-close-cross">
         <use href="/TheWatchSpot/assets/icons-4e1f6558.svg#close"></use>
       </svg>
@@ -501,7 +502,10 @@ UT 84104</pre
           src="/TheWatchSpot/assets/catalog-desktop-1-4d44fee2.png"
           alt="LEFF AMSTERDAM"
         />
-        <p class="buy-now-description">
+        <p
+          class="buy-now-description"
+          title="Tube Watch S42 Date Steel With Black Case"
+        >
           Tube Watch S42 Date Steel With Black...
           <!-- Case ?????-->
         </p>
@@ -513,9 +517,11 @@ UT 84104</pre
           <input
             class="buy-now-input"
             type="text"
+            title="First_Name Last_Name"
             name="username"
-            pattern="(?=^.{0,40}$)^[a-zA-Z-]+\s[a-zA-Z-]+$"
+            pattern="(?=^.{0,40}$)^[a-zA-Zа-яА-ЯіІїЇєЄґҐ]+\s[a-zA-Zа-яА-ЯіІїЇєЄґҐ]+$"
             placeholder="Enter your full name"
+            required
           />
         </label>
         <label class="buy-now-label">
@@ -525,18 +531,22 @@ UT 84104</pre
             type="email"
             name="email"
             placeholder="Enter your email"
+            required
           />
         </label>
         <label class="buy-now-label">
           Card number
           <input
             class="buy-now-input"
-            type="tel"
-            name="card-number"
-            inputmode="numeric"
-            pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
-            autocomplete="cc-number"
+            type="text"
+            name="card-num"
             placeholder="Enter card"
+            size="18"
+            id="cr_no"
+            pattern="(?:\d{4}[- ]){3}\d{4}|\d{16}"
+            minlength="16"
+            maxlength="19"
+            required
           />
         </label>
         <label class="buy-now-label">
