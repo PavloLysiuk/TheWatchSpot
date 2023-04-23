@@ -158,6 +158,7 @@
     height: 50px;
   }
 
+  .footer-contacts-tel,
   .footer-contacts-text {
     font-size: 18px;
     line-height: 1.33;
@@ -264,6 +265,11 @@
     height: 100%;
 
     background-color: var(--dark-green-color);
+  }
+
+  .modal-team.is-open {
+    opacity: 1;
+    visibility: visible;
   }
 
   .modal-team-list {
