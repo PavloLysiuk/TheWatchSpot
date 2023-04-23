@@ -1,6 +1,7 @@
-<div class="buy-now-backdrop is-hidden">
+<div class="buy-now-backdrop" data-modal>
+  <!-- to check the modal window add this class "is-open"   -->
   <div class="buy-now-modal">
-    <button class="btn buy-now-close-modal" type="button">
+    <button class="btn buy-now-close-modal" type="button" data-modal-close>
       <svg width="24" height="24" class="buy-now-close-cross">
         <use href="/img/icons.svg#close"></use>
       </svg>
@@ -29,7 +30,7 @@
             class="buy-now-input"
             type="text"
             name="username"
-            pattern="(?=^.{0,40}$)^[a-zA-Z-]+\s[a-zA-Z-]+$"
+            pattern="(?=^.{0,40}$)^[a-zA-Zа-яА-ЯіІїЇєЄґҐ]+\s[a-zA-Zа-яА-ЯіІїЇєЄґҐ]+$"
             placeholder="Enter your full name"
           />
         </label>
@@ -46,12 +47,14 @@
           Card number
           <input
             class="buy-now-input"
-            type="tel"
-            name="card-number"
-            inputmode="numeric"
-            pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
-            autocomplete="cc-number"
+            type="text"
+            name="card-num"
             placeholder="Enter card"
+            size="18"
+            id="cr_no"
+            pattern="(?:\d{4}[- ]){3}\d{4}|\d{16}"
+            minlength="16"
+            maxlength="19"
           />
         </label>
         <label class="buy-now-label">
