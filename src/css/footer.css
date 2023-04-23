@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 20px;
 
@@ -81,7 +82,9 @@
 
 .footer-socials-link {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 40px;
   height: 40px;
@@ -103,14 +106,6 @@
 }
 
 .footer-socials-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 24px;
-  height: 24px;
-
   fill: var(--white-color);
 }
 
@@ -132,6 +127,13 @@
 .footer-terms-wrapper {
   display: flex;
   gap: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-team,
+  .footer-modal-link {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -184,8 +186,146 @@
     font-size: 14px;
   }
 
+  .footer-modal-link {
+    color: transparent;
+
+    transition: color var(--transition);
+  }
+
+  .footer-modal-link:is(:hover, :focus) {
+    color: var(--light-grey-color);
+  }
+
   .footer-terms-wrapper {
     gap: 18px;
+  }
+
+  .footer > .container {
+    position: relative;
+  }
+
+  .modal-team-goit-icon {
+    position: absolute;
+    top: -32px;
+    left: 32px;
+
+    fill: #000000;
+
+    transition: fill var(--transition);
+  }
+
+  .modal-team-goit:is(:hover, :focus) .modal-team-goit-icon {
+    fill: var(--white-color);
+  }
+
+  .modal-team-close-btn {
+    position: absolute;
+    top: -36px;
+    right: 24px;
+
+    display: flex;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+  }
+
+  .modal-team-close-icon {
+    justify-content: center;
+    align-items: center;
+
+    fill: var(--white-color);
+
+    transition: fill var(--transition);
+  }
+
+  .modal-team-close-btn:is(:hover, :focus) .modal-team-close-icon {
+    fill: #ff5c00;
+  }
+
+  .modal-team {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--dark-green-color);
+  }
+
+  .modal-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+    width: 704px;
+  }
+
+  .modal-team-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px;
+
+    width: calc((100% - (24px * 3)) / 4);
+
+    border-radius: 8px;
+    border: 1px solid var(--social-hover-color);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .modal-team-photo {
+    width: 50px;
+    height: 50px;
+
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .modal-team-title {
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    color: var(--white-color);
+    line-height: 1;
+  }
+
+  .modal-team-text {
+    margin-top: 6px;
+
+    font-size: 10px;
+
+    color: var(--second-light-grey-color);
+    line-height: 1;
+  }
+
+  .modal-team-link {
+    margin-top: 12px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-team-icon {
+    fill: var(--second-light-grey-color);
+
+    transform: scale(1);
+    transition: transform var(--transition), fill var(--transition);
+  }
+
+  .modal-team-icon:is(:hover, :focus) {
+    transform: scale(1.25);
+    fill: var(--white-color);
   }
 }
 
@@ -196,5 +336,31 @@
 
   .footer-copyright {
     margin-top: 174px;
+  }
+
+  .modal-team-goit-icon {
+    top: -32px;
+    left: 52px;
+  }
+
+  .modal-team-close-btn {
+    right: 46px;
+  }
+
+  .modal-team-list {
+    width: 1176px;
+  }
+
+  .modal-team-photo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .modal-team-title {
+    font-size: 18px;
+  }
+
+  .modal-team-text {
+    font-size: 14px;
   }
 }
