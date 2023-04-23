@@ -89,12 +89,9 @@
   .header-link {
     padding-top: 38px;
     padding-bottom: 38px;
-  }
 
-  .header-item {
     font-size: 9px;
     line-height: 1.33;
-    text-align: center;
     text-transform: uppercase;
 
     color: var(--white-color);
@@ -102,8 +99,9 @@
     transition: color var(--transition);
   }
 
-  .header-item:hover,
-  .header-item:focus {
+
+  .header-link:hover,
+  .header-link:focus {
     color: var(--second-light-grey-color);
   }
 
