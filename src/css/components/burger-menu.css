@@ -8,8 +8,6 @@
 
   background-color: var(--dark-green-color);
 
-  overflow: auto;
-
   transform: translateX(100%);
   transition: transform var(--transition);
 }
