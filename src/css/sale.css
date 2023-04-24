@@ -1,30 +1,27 @@
-
-
-.sale-title{
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: var(--main-dark-color)
+.sale-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--main-dark-color);
 }
 
-.sale-gallery{
+.sale-gallery {
   display: flex;
   margin-bottom: 40px;
 }
 
-.sale-gallery-item{
+.sale-gallery-item {
   width: 80px;
   height: 80px;
   display: flex;
-  background-color:var(--main-dark-color);
 }
 
-.sale-gallery-item:not(:last-child){
+.sale-gallery-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.sale-picture:nth-child(1){
+.sale-picture:nth-child(1) {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -35,37 +32,35 @@
   padding-bottom: 80px;
 }
 
-
-
 .sale-title {
   margin-bottom: 40px;
 }
 
-.sale-gallery {}
+.sale-gallery {
+}
 
 .sale-gallery-list {
   margin-right: 20px;
 }
 
-.sale-gallery-item {}
+.sale-gallery-item {
+}
 
-
-.sale-item-big{
+.sale-item-big {
   display: flex;
   justify-content: center;
-  align-items:center;
-  background-color:var(--main-dark-color);
+  align-items: center;
+  background-color: var(--main-dark-color);
   width: 245px;
 }
 
 .sale-item-info {
-  display:block;
+  display: block;
 }
 
 .sale-item-main-info {
   margin-bottom: 40px;
 }
-
 
 .sale-item-price {
   display: flex;
@@ -82,38 +77,36 @@
 }
 
 .sale-item-previous-price {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    text-decoration-line: line-through;
-    color: var(--grey-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-decoration-line: line-through;
+  color: var(--grey-color);
 }
 
-.sale-item-description{
+.sale-item-description {
   margin-bottom: 40px;
 }
 
 .sale-item-description::before {
   display: block;
-  content:'';
+  content: '';
   width: 100%;
   height: 1px;
-  background-color:var(--main-dark-color)
+  background-color: var(--main-dark-color);
 }
 
 .sale-item-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    color: var(--main-dark-color);
-    margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--main-dark-color);
+  margin-bottom: 8px;
 }
 
 .sale-item-product-tag {
-
-
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--grey-color);
@@ -122,11 +115,10 @@
 .sale-item-description-text {
   line-height: 1.29;
   letter-spacing: -0.01em;
-  color: var(--grey-color)
-
+  color: var(--grey-color);
 }
 
-.sale-item-description-title{
+.sale-item-description-title {
   margin-top: 8px;
   margin-bottom: 17px;
 
@@ -139,30 +131,29 @@
   color: var(--main-dark-color);
 }
 
-.sale-item-description-title::after{
+.sale-item-description-title::after {
   position: absolute;
   content: '';
   width: 16px;
   height: 1px;
-  right:0;
+  right: 0;
   top: 50%;
   background-color: var(--main-dark-color);
 }
 
-.sale-item-details{
-
+.sale-item-details {
 }
 
 .sale-item-details::before {
   display: block;
-  content:'';
+  content: '';
   width: 100%;
   height: 1px;
   background-color: var(--main-dark-color);
 }
 
 .sale-item-details-title {
-position: relative;
+  position: relative;
 
   margin-top: 8px;
   margin-bottom: 17px;
@@ -175,7 +166,7 @@ position: relative;
   color: #141414;
 }
 
-.sale-item-details-title::after{
+.sale-item-details-title::after {
   position: absolute;
   content: '';
   width: 16px;
@@ -185,94 +176,83 @@ position: relative;
   background-color: var(--main-dark-color);
 }
 
-.sale-item-details-text{
+.sale-item-details-text {
   font-family: 'Epilogue';
   line-height: 1.29;
   letter-spacing: -0.01em;
-  color:var(--grey-color)
+  color: var(--grey-color);
 }
 
 @media screen and (min-width: 768px) {
-
-  .sale-item-big{
+  .sale-item-big {
     width: 406px;
     height: 614px;
   }
 
-.sale-gallery-item{
-  width: 146px;
-  height: 146px;
-}
+  .sale-gallery-item {
+    width: 146px;
+    height: 146px;
+  }
 
-
-
-
-
-  .sale-item-title{
+  .sale-item-title {
     font-size: 38px;
     line-height: 1.05;
     letter-spacing: -0.02em;
   }
 
-  .sale-title{
+  .sale-title {
     font-weight: 600;
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
 
-  .info-wrap{
+  .info-wrap {
     padding-left: 66px;
     padding-right: 66px;
   }
 
-  .sale-picture-big{
+  .sale-picture-big {
     width: 406px;
     height: 614px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-
-
-
-  .info-wrap{
+  .info-wrap {
     display: flex;
     flex-direction: row;
     max-height: 614px;
   }
 
-  .info-wrap{
+  .info-wrap {
     padding-left: 97px;
     padding-right: 97px;
   }
 
-  .sale-picture{
-
+  .sale-picture {
     width: 146px;
     height: 146px;
   }
 
-  .sale-picture-big{
+  .sale-picture-big {
     margin-right: 40px;
     margin: 0 auto;
   }
 
-  .sale-title{
+  .sale-title {
     margin-bottom: 80px;
   }
 
-  .sale-item-big{
-
+  .sale-item-big {
     margin-right: 40px;
   }
 
-  .sale-gallery{
+  .sale-gallery {
     margin-bottom: 0;
   }
 
   .sale-item-description {
     margin-bottom: 20px;
   }
-
 }
