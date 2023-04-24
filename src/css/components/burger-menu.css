@@ -9,16 +9,14 @@
   background-color: var(--dark-green-color);
 
   overflow: auto;
-  opacity: 0;
-  visibility: hidden;
 
-  transition: var(--transition);
+  transform: translateX(100%);
+  transition: transform var(--transition);
 }
 
-/* .mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-} */
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
 
 .menu-mob-close {
   border: none;
@@ -54,7 +52,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
-color: var(--white-color);
+  color: var(--white-color);
   transition: color var(--transition);
 }
 
@@ -62,4 +60,3 @@ color: var(--white-color);
 .mob-link:focus {
   color: var(--second-light-grey-color);
 }
-
