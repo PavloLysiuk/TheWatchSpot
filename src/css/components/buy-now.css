@@ -131,6 +131,11 @@
   border: 2px solid rgba(255, 0, 0, 0.5);
 }
 
+.buy-now-input:focus {
+  outline: none;
+  border: 2px solid var(--dark-green-color);
+}
+
 .buy-now-input::placeholder {
   font-size: 14px;
   line-height: 1.29;
