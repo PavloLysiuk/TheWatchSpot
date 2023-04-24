@@ -1,6 +1,6 @@
 .gotop-wrapper {
   position: fixed;
-  bottom: 90px;
+  bottom: 84px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -51,5 +51,11 @@
   .gotop-icon {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gotop-wrapper {
+    bottom: 120px;
   }
 }
