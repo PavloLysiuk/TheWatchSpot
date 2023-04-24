@@ -15,10 +15,10 @@
   transition: var(--transition);
 }
 
-.mobile-menu.is-open {
+/* .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .menu-mob-close {
   border: none;
@@ -63,10 +63,3 @@ color: var(--white-color);
   color: var(--second-light-grey-color);
 }
 
-/* Tablet */
-
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
