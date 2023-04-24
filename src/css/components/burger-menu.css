@@ -9,8 +9,6 @@
   background-color: var(--dark-green-color);
 
   overflow: auto;
-  opacity: 0;
-  visibility: hidden;
 
   transform: translateX(100%);
   transition: transform var(--transition);
