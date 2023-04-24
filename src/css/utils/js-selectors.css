@@ -3,3 +3,7 @@
   visibility: visible;
   pointer-events: all;
 }
+
+.modal-open {
+  overflow: hidden;
+}

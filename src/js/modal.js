@@ -8,7 +8,9 @@
       const modalId = btn.getAttribute('data-modal-open');
       const modal = document.querySelector(`[data-modal="${modalId}"]`);
       modal.classList.add('is-open');
-      document.body.classList.add('modal-open');
+      if (modalId !== 'team-modal') {
+        document.body.classList.add('modal-open');
+      }
     });
   });
 
