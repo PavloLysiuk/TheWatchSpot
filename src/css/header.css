@@ -1,4 +1,4 @@
-.header {
+.header-section {
   position: absolute;
   left: 0;
   right: 0;
@@ -98,7 +98,6 @@
 
     transition: color var(--transition);
   }
-
 
   .header-link:hover,
   .header-link:focus {
