@@ -7,20 +7,14 @@
   height: 100%;
   z-index: 1;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
   backdrop-filter: blur(12px);
   background-color: var(--second-grey-color);
 
   transition: opacity var(--transition), visibility var(--transition);
 }
 
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
+.buy-now-backdrop.is-hidden:not(.is-open) > .buy-now-modal {
+  transform: translate(0%, -150%);
 }
 
 .buy-now-modal {
@@ -40,10 +34,6 @@
   transition: transform var(--transition);
 }
 
-.buy-now-backdrop.is-hidden > .buy-now-modal {
-  transform: translate(-50%, -150%);
-}
-
 .buy-now-close-modal {
   width: 20px;
   height: 20px;
@@ -60,6 +50,11 @@
 
 .buy-now-close-cross {
   fill: var(--main-dark-color);
+}
+
+.buy-now-close-cross:hover,
+.buy-now-close-cross:focus {
+  fill: var(--grey-color);
 }
 
 .buy-now-wach-info {
@@ -220,6 +215,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .buy-now-backdrop.is-hidden:not(.is-open) > .buy-now-modal {
+    transform: translate(-50%, -150%);
+  }
+
   .buy-now-modal {
     width: 904px;
 
