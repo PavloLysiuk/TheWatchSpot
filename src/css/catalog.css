@@ -1,220 +1,232 @@
-
 .catalog-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.catalog-title {
-    margin-bottom: 40px;
-        font-size: 32px;
-        line-height: 1.25;
-        letter-spacing: -0.02em;
 
-        color: var(--dark-green-color);
+.catalog-title {
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+
+  color: var(--dark-green-color);
 }
 
 .catalog-item {
-    margin-bottom: 40px;
-    width: 100%;
-    height: 410px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 410px;
 }
 
 .catalog-img {
-    padding: 43px 30px; 
+  padding: 43px 30px;
 }
 
 .watches-content {
-    margin-top: 14px;
-    margin-left: 0;
+  margin-top: 14px;
 }
 
 .watches-title {
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+  width: 335px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 .watches-description {
-    margin-top: 4px;
-    margin-bottom: 0;
-    font-size: 12px;
-        line-height: 1.2;
-        letter-spacing: -0.02em;
-    
-        color: var(--grey-color);
+  margin-top: 4px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  color: var(--grey-color);
 }
 
 .catalog-button {
   display: block;
-  min-width: 108px;
-  margin-top: 40px;
+
   margin-left: auto;
+  margin-top: 40px;
   padding: 14px 28px;
+
   font-size: 12px;
 }
 
-.catalog-link:hover .flip-inner, 
+.catalog-link:hover .flip-inner,
 .catalog-link:focus .flip-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-inner {
-    max-width: 336px;
-    height: 360px;
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+
+  max-width: 336px;
+  height: 360px;
+
+  transition: transform var(--transition);
+  transform-style: preserve-3d;
 }
 
 .flip-item:hover .flip-inner,
 .flip-item:focus .flip-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-wrapper,
 .flip-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
 }
 
- .flip-back {
-     padding: 46px 40px 30px 40px;
-     background: var(--dark-green-color);
-     border-radius: 8px;
-     color: var(--white-color);
-     transform: rotateY(180deg);
- }
+.flip-back {
+  padding: 46px 40px 30px;
 
- .overlay-title {
-     margin-top: 20px;
-     margin-bottom: 10px;
+  color: var(--white-color);
+  background: var(--dark-green-color);
+  border-radius: 8px;
 
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 1.29;
-     letter-spacing: -0.02em;
- }
+  transform: rotateY(180deg);
+}
 
- .overlay-title:first-child {
-     margin-top: 0;
- }
+.overlay-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
 
- .overlay-decr {
-    max-width: 236px;
-     margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
 
-     font-family: "Epilogue", sans-serif;
-     line-height: 1.29;
-     color: var(--second-light-grey-color);
- }
+.overlay-title:first-child {
+  margin-top: 0;
+}
 
-@media screen and (max-width: 767px){
-    .catalog-item:nth-last-child(-n+4) {
-            display: none;
-        }
+.overlay-decr {
+  max-width: 236px;
+  margin: 0;
 
-    .catalog-icon-open {
-            display: none;
-        }
+  font-family: 'Epilogue', sans-serif;
+  line-height: 1.29;
+  color: var(--second-light-grey-color);
+}
+
+.catalog-icon-open {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 24px;
+  height: 24px;
+
+  fill: var(--heart-grey-color);
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-item:nth-last-child(-n + 4) {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .catalog-container {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
+  .catalog-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 
-    .catalog-title {
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 1.1;
-        }
+  .catalog-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+  }
 
-    .catalog-list {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 32px;
-        row-gap: 40px;
-    }
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 40px;
+  }
 
-    .catalog-item {
-        width: 336px;
-        margin-bottom: 0;
-    }
+  .catalog-item {
+    margin-bottom: 0;
+    width: 336px;
+  }
 
-    .catalog-img {
+  .catalog-img {
     padding: 43px 30px;
-}
+  }
 
- .catalog-icon-open {
-     position: absolute;
-     top: 14px;
-     right: 14px;
-     width: 24px;
-     height: 24px;
+  .watches-title {
+    width: 336px;
+  }
 
-     fill: var(--heart-grey-color);
- }
+  .catalog-button {
+    padding: 18px 35px;
+  }
 
-    .catalog-button {
-        min-width: 122px;
-        padding: 18px 35px;
-    }
-
-        .overlay-title {
-            margin-top: 22px;
-        }
-
+  .overlay-title {
+    margin-top: 22px;
+  }
 }
 
 @media screen and (max-width: 1279px) {
-    .catalog-item:nth-last-child(-n+4) {
-            display: none;
-        }
+  .catalog-item:nth-last-child(-n + 4) {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .catalog-container {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
+  .catalog-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-    .catalog-title {
-        margin-bottom: 64px;
-    }
+  .catalog-title {
+    margin-bottom: 64px;
+  }
 
-    .catalog-list {
-             column-gap: 24px;
-             row-gap: 64px;
-         }
+  .catalog-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
 
-        .catalog-item {
-            width: 276px;
-            height: 375px;
-        }
+  .catalog-item {
+    width: 276px;
+    height: 375px;
+  }
 
-        .catalog-img {
-            padding: 26px 0 25px 0;
-        }
-    
-        .catalog-icon-open {
-            display: none;
-        } 
+  .catalog-img {
+    padding: 26px 0 25px;
+  }
 
-           .catalog-button {
-            margin-top: 80px;
-           }
+  .watches-title {
+    width: 276px;
+  }
 
-        .flip-inner {
-            width: 276px;
-            height: 325px;
-        }
-    
-        .flip-back {
-            padding: 26px 20px 20px 20px;
-        }
-    
-        .overlay-title {
-            margin-top: 26px;
-        }
+  .catalog-button {
+    margin-top: 80px;
+  }
+
+  .flip-inner {
+    width: 276px;
+    height: 325px;
+  }
+
+  .flip-back {
+    padding: 26px 20px 20px;
+  }
+
+  .overlay-title {
+    margin-top: 26px;
+  }
 }

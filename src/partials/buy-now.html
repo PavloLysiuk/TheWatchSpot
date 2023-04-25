@@ -1,5 +1,4 @@
-<div class="buy-now-backdrop" data-modal>
-  <!-- to check the modal window add this class "is-open"   -->
+<div class="buy-now-backdrop is-hidden" data-modal>
   <div class="buy-now-modal">
     <button class="btn buy-now-close-modal" type="button" data-modal-close>
       <svg width="24" height="24" class="buy-now-close-cross">
@@ -8,21 +7,28 @@
     </button>
     <div class="buy-now-wrap">
       <div class="buy-now-wach-info">
-        <img
-          class="buy-now-img"
-          srcset="
-            /img/catalog-desktop-1.png     1x,
-            /img/catalog-desktop-1-@2x.png 2x
-          "
-          src="/img/catalog-desktop-1.png"
-          alt="LEFF AMSTERDAM"
-        />
+        <picture class="buy-now-img">
+          <source
+            srcset="
+              /img/catalog-desktop-1-min.webp    1x,
+              /img/catalog-desktop-1-min@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              /img/catalog-desktop-1-min.png    1x,
+              /img/catalog-desktop-1-min@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="/img/catalog-desktop-1-min.png" alt="LEFF AMSTERDAM" />
+        </picture>
         <p
           class="buy-now-description"
           title="Tube Watch S42 Date Steel With Black Case"
         >
           Tube Watch S42 Date Steel With Black...
-          <!-- Case ?????-->
         </p>
         <p class="buy-now-price">€395</p>
       </div>
