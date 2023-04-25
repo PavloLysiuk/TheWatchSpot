@@ -50,11 +50,13 @@
 
 .buy-now-close-cross {
   fill: var(--main-dark-color);
+  transition: fill var(--transition);
 }
 
 .buy-now-close-cross:hover,
 .buy-now-close-cross:focus {
   fill: var(--grey-color);
+  transition: fill var(--transition);
 }
 
 .buy-now-wach-info {
