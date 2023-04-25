@@ -115,15 +115,6 @@
   border-radius: 8px;
 }
 
-.buy-now-input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-
-  color: var(--grey-color);
-}
-
 .buy-now-input:not(:focus):not(:placeholder-shown):invalid {
   border: 2px solid rgba(255, 0, 0, 0.5);
 }
