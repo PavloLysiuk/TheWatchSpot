@@ -2,8 +2,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .catalog-title {
   margin-bottom: 40px;
+
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -23,17 +25,22 @@
 
 .watches-content {
   margin-top: 14px;
-  margin-left: 0;
 }
 
 .watches-title {
+  width: 335px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
 
 .watches-description {
   margin-top: 4px;
-  margin-bottom: 0;
+
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -43,10 +50,11 @@
 
 .catalog-button {
   display: block;
-  min-width: 108px;
-  margin-top: 40px;
+
   margin-left: auto;
+  margin-top: 40px;
   padding: 14px 28px;
+
   font-size: 12px;
 }
 
@@ -56,10 +64,12 @@
 }
 
 .flip-inner {
+  position: relative;
+
   max-width: 336px;
   height: 360px;
-  position: relative;
-  transition: transform 0.8s;
+
+  transition: transform var(--transition);
   transform-style: preserve-3d;
 }
 
@@ -71,16 +81,20 @@
 .flip-wrapper,
 .flip-back {
   position: absolute;
+
   width: 100%;
   height: 100%;
+
   backface-visibility: hidden;
 }
 
 .flip-back {
-  padding: 46px 40px 30px 40px;
+  padding: 46px 40px 30px;
+
+  color: var(--white-color);
   background: var(--dark-green-color);
   border-radius: 8px;
-  color: var(--white-color);
+
   transform: rotateY(180deg);
 }
 
@@ -111,6 +125,7 @@
   position: absolute;
   top: 14px;
   right: 14px;
+
   width: 24px;
   height: 24px;
 
@@ -143,16 +158,19 @@
   }
 
   .catalog-item {
-    width: 336px;
     margin-bottom: 0;
+    width: 336px;
   }
 
   .catalog-img {
     padding: 43px 30px;
   }
 
+  .watches-title {
+    width: 336px;
+  }
+
   .catalog-button {
-    min-width: 122px;
     padding: 18px 35px;
   }
 
@@ -188,7 +206,11 @@
   }
 
   .catalog-img {
-    padding: 26px 0 25px 0;
+    padding: 26px 0 25px;
+  }
+
+  .watches-title {
+    width: 276px;
   }
 
   .catalog-button {
@@ -201,7 +223,7 @@
   }
 
   .flip-back {
-    padding: 26px 20px 20px 20px;
+    padding: 26px 20px 20px;
   }
 
   .overlay-title {
