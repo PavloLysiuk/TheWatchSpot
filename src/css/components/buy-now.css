@@ -50,11 +50,13 @@
 
 .buy-now-close-cross {
   fill: var(--main-dark-color);
+  transition: fill var(--transition);
 }
 
 .buy-now-close-cross:hover,
 .buy-now-close-cross:focus {
   fill: var(--grey-color);
+  transition: fill var(--transition);
 }
 
 .buy-now-wach-info {
@@ -111,15 +113,6 @@
 
   border: 1px solid var(--grey-color);
   border-radius: 8px;
-}
-
-.buy-now-input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-
-  color: var(--grey-color);
 }
 
 .buy-now-input:not(:focus):not(:placeholder-shown):invalid {
