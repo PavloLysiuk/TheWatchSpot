@@ -37,7 +37,7 @@
   .modal-team-open-btn {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 1px;
     transform: translateX(-50%);
 
     padding: 20px;
