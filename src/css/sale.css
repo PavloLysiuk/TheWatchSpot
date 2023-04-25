@@ -14,6 +14,47 @@
   color: var(--main-dark-color);
 }
 
+.sale-slider-container {
+  position: relative;
+  display: flex;
+  width: 335px;
+  height: 350px;
+}
+
+.sale-item-small {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+
+  width: 80px;
+}
+
+.sale-item-small-list {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 80px;
+  height: 350px;
+}
+
+.sale-item-small-list .sale-item-small-item.swiper-slide {
+  width: 80px;
+  height: 80px;
+}
+
+.mySwiper .swiper-slide {
+  width: 80px;
+  height: 80px;
+  opacity: 0.4;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  margin-left: 0;
+}
+
 /* .sale-gallery {
   display: flex;
   justify-content: center;
