@@ -218,6 +218,7 @@
 
   .sale-gallery {
     margin-bottom: 0;
+    margin-right: 40px;
   }
 
   .sale-picture {
@@ -225,9 +226,7 @@
     height: 146px;
   }
 
-  .sale-item-big {
-    margin-right: 40px;
-  }
+
 
   .sale-picture-big {
     margin: 0 auto;
