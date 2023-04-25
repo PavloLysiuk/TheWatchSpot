@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-hero', {
   // effect cube for foto
   effect: 'cube',
   grabCursor: true,

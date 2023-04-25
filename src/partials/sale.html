@@ -2,10 +2,63 @@
   <div class="sale-container container">
     <h2 class="sale-title">Sale</h2>
     <div class="info-wrap">
-      <div class="sale-gallery swiper mySwiper2">
-        <ul class="sale-gallery-list-big swiper-wrapper">
-          <li class="sale-gallery-item-big swiper-slide" lazy="true">
-            <picture class="sale-picture">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <img
+                src="/img/sale-slider/sale-big-mobile-1.png"
+                alt="watch img 1"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <img
+                src="/img/sale-slider/sale-big-mobile-2.jpg"
+                alt="watch image 2"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture
+              ><img
+                src="/img/sale-slider/sale-small-mobile-1.jpg"
+                alt="watch img 1"
+                loading="lazy"
+            /></picture>
+          </div>
+          <div class="swiper-slide">
+            <picture
+              ><img
+                src="/img/sale-slider/sale-small-mobile-2.jpg"
+                alt="watch image 2"
+                loading="lazy"
+            /></picture>
+          </div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+      </div>
+
+      <div
+        class="sale-gallery swiper mySwiperSale2"
+        style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
+      >
+        <ul class="sale-gallery-list-big swiper-wrapper-sale">
+          <li class="sale-gallery-item-big swiper-slide-sale" lazy="true">
+            <picture>
               <img
                 src="/img/sale-slider/sale-big-mobile-1.png"
                 alt="watch img 1"
@@ -13,8 +66,8 @@
               />
             </picture>
           </li>
-          <li class="sale-gallery-item-big swiper-slide" lazy="true">
-            <picture class="sale-picture">
+          <li class="sale-gallery-item-big swiper-slide-sale" lazy="true">
+            <picture>
               <img
                 src="/img/sale-slider/sale-big-mobile-2.jpg"
                 alt="watch image 2"
@@ -22,8 +75,8 @@
               />
             </picture>
           </li>
-          <li class="sale-gallery-item-big swiper-slide" lazy="true">
-            <picture class="sale-picture">
+          <li class="sale-gallery-item-big swiper-slide-sale" lazy="true">
+            <picture>
               <img
                 src="/img/sale-slider/sale-big-mobile-3.jpg"
                 alt="watch image 3"
@@ -31,7 +84,7 @@
               />
             </picture>
           </li>
-          <li class="sale-gallery-item-big swiper-slide" lazy="true">
+          <li class="sale-gallery-item-big swiper-slide-sale" lazy="true">
             <picture>
               <img
                 src="/img/sale-slider/sale-big-mobile-4.jpg"
@@ -41,46 +94,47 @@
             </picture>
           </li>
         </ul>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <div class="sale-item-big swiper mySwiper">
-          <ul class="sale-item-big-list swiper-wrapper">
-            <li class="sale-item-big-item swiper-slide" lazy="true">
-              <picture
-                ><img
-                  src="/img/sale-slider/sale-big-mobile-1.png"
-                  alt="watch img 1"
-                  loading="lazy"
-              /></picture>
-            </li>
-            <li class="sale-item-big-item swiper-slide" lazy="true">
-              <picture
-                ><img
-                  src="/img/sale-slider/sale-small-mobile-2.jpg"
-                  alt="watch image 2"
-                  loading="lazy"
-              /></picture>
-            </li>
-            <li class="sale-item-big-item swiper-slide" lazy="true">
-              <picture
-                ><img
-                  src="/img/sale-slider/sale-small-mobile-3.jpg"
-                  alt="watch image 3"
-                  loading="lazy"
-              /></picture>
-            </li>
-            <li class="sale-item-big-item swiper-slide" lazy="true">
-              <picture
-                ><img
-                  src="/img/sale-slider/sale-small-mobile-4.jpg"
-                  alt="watch image 4"
-                  loading="lazy"
-              /></picture>
-            </li>
-          </ul>
-        </div>
+        <div class="swiper-button-next-sale"></div>
+        <div class="swiper-button-prev-sale"></div>
       </div>
+
+      <div thumbsSlider="" class="sale-item-big swiper-sale mySwiperSale">
+        <ul class="sale-item-big-list swiper-wrapper-sale">
+          <li class="sale-item-big-item swiper-slide-sale" lazy="true">
+            <picture
+              ><img
+                src="/img/sale-slider/sale-small-mobile-1.jpg"
+                alt="watch img 1"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="sale-item-big-item swiper-slide-sale" lazy="true">
+            <picture
+              ><img
+                src="/img/sale-slider/sale-small-mobile-2.jpg"
+                alt="watch image 2"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="sale-item-big-item swiper-slide-sale" lazy="true">
+            <picture
+              ><img
+                src="/img/sale-slider/sale-small-mobile-3.jpg"
+                alt="watch image 3"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="sale-item-big-item swiper-slide-sale" lazy="true">
+            <picture
+              ><img
+                src="/img/sale-slider/sale-small-mobile-4.jpg"
+                alt="watch image 4"
+                loading="lazy"
+            /></picture>
+          </li>
+        </ul>
+      </div>
+
       <div class="sale-item-info">
         <div class="sale-item-main-info">
           <h2 class="sale-item-title">Greenlane Watch By Police For MenHT</h2>
