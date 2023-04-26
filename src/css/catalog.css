@@ -112,11 +112,7 @@
   margin-top: 0;
 }
 
-.overlay-decr {
-  max-width: 236px;
-  margin: 0;
-
-  font-family: 'Epilogue', sans-serif;
+.overlay-descr {
   line-height: 1.29;
   color: var(--second-light-grey-color);
 }
