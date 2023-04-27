@@ -38,6 +38,12 @@
   letter-spacing: -0.02em;
 }
 
+@media screen and (max-width: 374px) {
+  .watches-title {
+    width: 280px;
+  }
+}
+
 .watches-description {
   margin-top: 4px;
 
