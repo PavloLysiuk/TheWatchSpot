@@ -75,7 +75,7 @@
   max-width: 336px;
   height: 360px;
 
-  transition: transform var(--transition);
+  transition: transform var(--card-transition);
   transform-style: preserve-3d;
 }
 
