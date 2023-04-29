@@ -116,7 +116,7 @@
   fill: var(--white-color);
 }
 
-.footer-copyright {
+.footer-copywright {
   margin-top: 80px;
 
   display: flex;
@@ -141,10 +141,8 @@
   transition: color var(--transition);
 }
 
-.footer-policy:hover,
-.footer-terms:hover,
-.footer-policy:focus,
-.footer-terms:focus {
+.footer-policy:is(:hover, :focus),
+.footer-terms:is(:hover, :focus) {
   color: var(--second-light-grey-color);
 }
 
