@@ -42,24 +42,22 @@
 
     padding: 20px;
 
-    font-size: 18px;
     line-height: 1;
 
     opacity: 0.1;
 
-    color: var(--white-color);
     border: none;
     background-color: transparent;
 
     transition: opacity var(--transition);
   }
 
-  .modal-team-btn-text {
-    color: #ffc900;
-  }
-
   .modal-team-open-btn:is(:hover, :focus) {
     opacity: 1;
+  }
+
+  .modal-team-open-icon {
+    fill: var(--white-color);
   }
 
   .modal-team-close-btn {
